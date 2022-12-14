@@ -26,7 +26,7 @@ void addnode(stack_t **head, int n)
 
 	if ((*head)->next == NULL)
 	{
-		new = *head;
+		*head = new;
 	}
 	else
 		new->next = *head;
